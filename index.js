@@ -1,3 +1,13 @@
+
+var counter=1;
+setInterval(function(){
+    document.getElementById('radio'+counter).checked=true;
+    counter++;
+    if(counter>4)
+    {
+        counter=1;
+    }
+},5000);
 var dest=new Date("jan 1,2023 00:00:00").getTime();
 function interval(){
     var curr=new Date().getTime();
